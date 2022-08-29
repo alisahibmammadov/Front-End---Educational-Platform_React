@@ -1,13 +1,24 @@
-import React from "react";
+import React from 'react'
 import Hat from "../../assets/images/eduhat.png";
 import Earth from "../../assets/images/earth.png";
 import Clock from "../../assets/images/clock.png";
 import Book from "../../assets/images/book.png";
+import Logo1 from '../../assets/images/2.jpeg'
+import Logo2 from '../../assets/images/classiceventscard.jpg'
+import Logo3 from '../../assets/images/crsl-4.jpg'
 
-const Homeform = () => {
+const Aboutuseduca = () => {
   return (
-    <div className="container">
-      <div className="welcome-educa">
+    <div className='container aboutuseduca-page'>
+        <div className='left-side left'>
+          <img src={Logo1} alt="Logo1" />
+          <nav className='nav'>
+            <img src={Logo2} alt="Logo2" />
+            <img src={Logo3} alt="Logo3" />
+          </nav>
+        </div>
+
+        <div className='right-side right'>
         <div className="educa-left">
           <h1>Welcome to educa</h1>
           <p>Twee Vice synth stumptown</p>
@@ -68,55 +79,9 @@ const Homeform = () => {
             </div>
           </div>
         </div>
-
-        <div className="educa-right">
-          <form className="right-form">
-            <div className="right-form-head">
-                <div></div>
-                <h4> REQUEST INFORMATION</h4>
-            </div>
-            <div className="input-div">
-              <input
-                type="text"
-                id="username"
-                placeholder="Full Name"
-                className="input"
-              />
-              {/* <small>Error Message</small> */}
-            </div>
-            <div className="input-div">
-              <input
-                type="email"
-                id="email"
-                placeholder="E-mail Address"
-                className="input"
-              />
-              {/* <small>Error Message</small> */}
-            </div>
-            <div className="selects">
-              <select name="Azeri" id="lang" className="select-select">
-                <option value="En">Nearby</option>
-                <option value="Az">Campus of Interests</option>
-                <option value="Rus">High Classes</option>
-                <option value="Rus">Short Time</option>
-                <option value="Rus">Long Time</option>
-              </select>
-            </div>
-            <div className="selects">
-              <select name="Azeri" id="lang" className="select-select">
-                <option value="En">Program of Interests</option>
-                <option value="Az">Working Process</option>
-                <option value="Rus">Archivements</option>
-                <option value="Rus">Social</option>
-                <option value="Rus">Profits</option>
-              </select>
-            </div>
-            <button>Submit Request</button>
-          </form>
         </div>
-      </div>
     </div>
-  );
-};
+  )
+}
 
-export default Homeform;
+export default Aboutuseduca

@@ -1,8 +1,13 @@
 import React from 'react'
+import Coursegridscourses from './Home/Coursegridscourses'
+import Coursegridsheader from './Home/Coursegridsheader'
 
 const Coursesgrids = () => {
   return (
-    <div>Coursesgrids</div>
+    <>
+    <Coursegridsheader />
+    <Coursegridscourses />
+    </>
   )
 }
 
